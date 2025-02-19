@@ -68,21 +68,28 @@ export const ServicesData = [
 
 export const WorksData = [
   {
+    id: "Bar-Vela",
     image: assets.vela_main,
     title: "Bar Vela - Bussines Card",
     Link: "/",
   },
   {
+    id: "Immersive-book ",
+
     image: assets.boek_main,
     title: "Branding & Logo Design",
     Link: "/",
   },
   {
+    id: "Cycle-Studio",
+
     image: assets.cycle_main,
     title: "Branding & Logo Design",
     Link: "/",
   },
   {
+    id: "Cafeina",
+
     image: assets.cafeina,
     title: "Branding & Logo Design",
     Link: "/",

@@ -40,7 +40,10 @@ const Works = () => {
                 {work.title}
               </h1>
               <p className="text-sm text-lightGray  md:text-left mt-2 ">
-                <Link className="hover:text-primary" href={work.Link}>
+                <Link
+                  className="hover:text-primary"
+                  href={`/portfolio/${work.id}`}
+                >
                   See project {"->"}
                 </Link>
               </p>

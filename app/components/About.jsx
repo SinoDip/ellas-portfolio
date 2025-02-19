@@ -5,6 +5,7 @@ import Image from "next/image";
 import { assets } from "@/assets/assets";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Link from "next/link";
 
 const About = () => {
   const sectionRef = useRef(null);
@@ -83,7 +84,7 @@ const About = () => {
           <div className="mt-8 flex flex-wrap items-center justify-center md:justify-start gap-3">
             <button className="bg-primary px-5 py-2 rounded-md md:hover:bg-transparent md:border-2 md:border-primary transition">
               <span className="transition-all duration-300 hover:text-white hover:scale-105">
-                Contact Me
+                <Link href="/contact">Contact</Link>
               </span>
             </button>
             <button className="flex items-center text-lightGray">

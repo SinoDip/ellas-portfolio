@@ -44,7 +44,7 @@ const Navbar = () => {
           </li>
         ))}
         <button className="border border-primary px-4 py-2 rounded-md hover:bg-primary hover:text-white transition">
-          Contact
+          <Link href="/contact">Contact</Link>
         </button>
       </ul>
 
@@ -72,7 +72,7 @@ const Navbar = () => {
             ))}
           </ul>
           <button className="mt-4 border border-primary px-4 py-2 rounded-md text-primary hover:bg-primary hover:text-white transition">
-            Contact
+            <Link href="/contact">Contact</Link>
           </button>
         </div>
       )}
