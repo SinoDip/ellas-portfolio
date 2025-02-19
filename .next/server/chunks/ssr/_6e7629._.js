@@ -484,16 +484,16 @@ const navData = [
         url: "/"
     },
     {
+        title: "About Me ",
+        url: "#about"
+    },
+    {
         title: "Services",
         url: "#services"
     },
     {
         title: "Works",
         url: "#works"
-    },
-    {
-        title: "About Us ",
-        url: "#about"
     }
 ];
 const ServicesData = [
