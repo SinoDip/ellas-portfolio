@@ -15,7 +15,7 @@ const Works = () => {
           <h1 className="text-4xl font-bold text-center md:text-left mt-5">
             Some of my favorite <br /> projects.
           </h1>
-          <Link className="mt-10 md:mt-0" href="/projects">
+          <Link className="mt-10 md:mt-0" href="/portfolio">
             <p className="border border-primary p-3 rounded-md md:hover:bg-primary md:hover:text-white transition-all cursor-pointer">
               View all projects
             </p>

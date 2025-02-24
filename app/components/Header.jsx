@@ -4,6 +4,8 @@ import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import { assets } from "@/assets/assets";
 import gsap from "gsap";
+import TrueFocus from "../reactbits/TrueFocus";
+import ShinyText from "../reactbits/ShinyText";
 
 const Header = () => {
   const headerRef = useRef(null);
@@ -31,7 +33,7 @@ const Header = () => {
   return (
     <div
       ref={headerRef}
-      className="w-full py-28 md:py-36 px-6 md:px-20 h-[100vh] flex flex-col md:flex-row items-center justify-center text-center md:text-left"
+      className="w-full py-28 md:py-36 px-6 md:px-20 h-[90vh] flex flex-col md:flex-row items-center justify-center text-center md:text-left"
     >
       {/* Right Section (Image) */}
       <div
@@ -47,8 +49,15 @@ const Header = () => {
           <h1 className="font-bold text-2xl md:text-3xl text-primary md:pb-5">
             Hello, I'm Ellas Touray
           </h1>
-          <h2 className="text-4xl md:text-[80px] font-bold md:leading-[75px] ">
-            Graphic Designer
+          <h2 className="text-4xl mt-5 md:text-[80px] font-bold md:leading-[75px] ">
+            <TrueFocus
+              sentence="Graphic Designer"
+              manualMode={false}
+              blurAmount={5}
+              borderColor="red"
+              animationDuration={2}
+              pauseBetweenAnimations={1}
+            />
           </h2>
           <p className="text-lightGray mt-5 text-sm md:text-base md:w-2/3">
             Transforming ideas into stunning visuals. Let's create something
@@ -65,14 +74,19 @@ const Header = () => {
             href="https://linkedin.com/in/yourprofile"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 border-2 border-primary px-5 py-2 rounded-md hover:md:bg-transparent bg-primary transition"
+            className="flex items-center  gap-2 border-2 border-primary px-5 py-2 rounded-md hover:md:bg-transparent  transition"
           >
             <Image
               src={assets.linkedin}
               alt="linkedin-icon"
               className="w-5 h-5 "
             />
-            Let's connect on LinkedIn
+            <ShinyText
+              text="Connect with me"
+              disabled={false}
+              speed={3}
+              className="custom-class"
+            />
           </a>
         </div>
       </div>

@@ -5,6 +5,8 @@ import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 
+// change the navbar to 80% in the middle with rounded corners and it get backs to full width once u scroll
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
