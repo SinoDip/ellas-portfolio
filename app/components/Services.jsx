@@ -5,6 +5,7 @@ import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import DecryptedText from "../reactbits/DecryptedText";
 
 const Services = () => {
   const sectionRef = useRef(null);
@@ -56,7 +57,13 @@ const Services = () => {
           ref={titleRef}
           className="text-4xl font-bold text-center md:text-left"
         >
-          3+ Years of experience <br /> working
+          <DecryptedText
+            text="3+ years of 
+             experience"
+            animateOn="view"
+            speed={200}
+            revealDirection="center"
+          />
         </h1>
         <div
           ref={textRef}

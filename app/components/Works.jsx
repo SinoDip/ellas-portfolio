@@ -33,7 +33,7 @@ const Works = () => {
                   alt={work.title}
                   width={500}
                   height={350}
-                  className="w-full h-full object-cover rounded-lg md:grayscale transition duration-500 hover:grayscale-0"
+                  className="w-full h-full object-cover rounded-lg "
                 />
               </div>
               <h1 className="text-2xl font-bold md:text-left mt-5">

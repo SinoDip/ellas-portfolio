@@ -33,7 +33,7 @@ const Header = () => {
   return (
     <div
       ref={headerRef}
-      className="w-full py-28 md:py-36 px-6 md:px-20 h-[90vh] flex flex-col md:flex-row items-center justify-center text-center md:text-left"
+      className="w-full  md:py-36 px-8 md:px-20 h-[90vh] flex flex-col md:flex-row items-center justify-center text-center md:text-left"
     >
       {/* Right Section (Image) */}
       <div

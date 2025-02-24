@@ -641,7 +641,7 @@ const Works = ()=>{
                                         alt: work.title,
                                         width: 500,
                                         height: 350,
-                                        className: "w-full h-full object-cover rounded-lg md:grayscale transition duration-500 hover:grayscale-0"
+                                        className: "w-full h-full object-cover rounded-lg "
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/Works.jsx",
                                         lineNumber: 31,

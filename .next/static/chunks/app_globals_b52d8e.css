@@ -391,6 +391,26 @@ img, video {
   top: -10px;
 }
 
+.top-14 {
+  top: 3.5rem;
+}
+
+.top-\[3\.5rem\] {
+  top: 3.5rem;
+}
+
+.top-\[3\.7rem\] {
+  top: 3.7rem;
+}
+
+.top-\[3\.8rem\] {
+  top: 3.8rem;
+}
+
+.top-5 {
+  top: 1.25rem;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -465,6 +485,10 @@ img, video {
   margin-top: 2rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -505,16 +529,12 @@ img, video {
   height: 250px;
 }
 
-.h-\[80vh\] {
-  height: 80vh;
+.h-\[90vh\] {
+  height: 90vh;
 }
 
 .h-full {
   height: 100%;
-}
-
-.h-\[90vh\] {
-  height: 90vh;
 }
 
 .w-10 {
@@ -537,8 +557,16 @@ img, video {
   width: 80%;
 }
 
+.w-\[80vw\] {
+  width: 80vw;
+}
+
 .w-full {
   width: 100%;
+}
+
+.w-\[90vw\] {
+  width: 90vw;
 }
 
 .max-w-4xl {
@@ -639,6 +667,10 @@ img, video {
   white-space: pre-wrap;
 }
 
+.rounded {
+  border-radius: .25rem;
+}
+
 .rounded-\[3px\] {
   border-radius: 3px;
 }
@@ -651,8 +683,8 @@ img, video {
   border-radius: .375rem;
 }
 
-.rounded {
-  border-radius: .25rem;
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .border {
@@ -711,6 +743,27 @@ img, video {
 .border-primary {
   --tw-border-opacity: 1;
   border-color: rgb(193 32 38 / var(--tw-border-opacity, 1));
+}
+
+.border-deepGray {
+  --tw-border-opacity: 1;
+  border-color: rgb(10 10 15 / var(--tw-border-opacity, 1));
+}
+
+.border-gray\/15 {
+  border-color: #80808026;
+}
+
+.border-gray\/25 {
+  border-color: #80808040;
+}
+
+.border-gray\/35 {
+  border-color: #80808059;
+}
+
+.border-black\/80 {
+  border-color: #000c;
 }
 
 .bg-black {
@@ -815,8 +868,37 @@ img, video {
   padding-bottom: 1.25rem;
 }
 
+.py-3 {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.py-36 {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+
 .pt-20 {
   padding-top: 5rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
 .text-center {
@@ -1053,6 +1135,10 @@ img, video {
 
   .md\:w-\[60\%\] {
     width: 60%;
+  }
+
+  .md\:w-\[80vw\] {
+    width: 80vw;
   }
 
   .md\:grid-cols-2 {
