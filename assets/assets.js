@@ -100,6 +100,8 @@ export const WorksData = [
   },
 ];
 
+//add minidesc for porfolio page and longdesc for dynamic page 
+
 export const portfolioData = [
   {
     id: "bar-vela",
