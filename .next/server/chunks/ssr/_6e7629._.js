@@ -435,7 +435,8 @@ __turbopack_esm__({
     "ServicesData": (()=>ServicesData),
     "WorksData": (()=>WorksData),
     "assets": (()=>assets),
-    "navData": (()=>navData)
+    "navData": (()=>navData),
+    "portfolioData": (()=>portfolioData)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$assets$2f$logowit$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$assets$2f$logowit$2e$png__$5b$app$2d$rsc$5d$__$28$static$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_import__('[project]/assets/logowit.png.mjs { IMAGE => "[project]/assets/logowit.png [app-rsc] (static)" } [app-rsc] (structured image object, ecmascript)');
 var __TURBOPACK__imported__module__$5b$project$5d2f$assets$2f$download$2d$icon$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$assets$2f$download$2d$icon$2e$png__$5b$app$2d$rsc$5d$__$28$static$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_import__('[project]/assets/download-icon.png.mjs { IMAGE => "[project]/assets/download-icon.png [app-rsc] (static)" } [app-rsc] (structured image object, ecmascript)');
@@ -523,7 +524,7 @@ const WorksData = [
     {
         id: "Immersive-book ",
         image: assets.boek_main,
-        title: "Branding & Logo Design",
+        title: "Book Design",
         Link: "/"
     },
     {
@@ -535,8 +536,34 @@ const WorksData = [
     {
         id: "Cafeina",
         image: assets.cafeina,
-        title: "Branding & Logo Design",
+        title: "Poster Design",
         Link: "/"
+    }
+];
+const portfolioData = [
+    {
+        id: 1,
+        title: "Bar Vela - Bussines Card",
+        image: assets.vela_main,
+        longDesc: "Bar Vela is a bar located in Antwerp, Belgium. The design of the business card is inspired by the bar's interior and the logo design. The card is designed to be minimalistic and elegant, with a touch of modernity."
+    },
+    {
+        id: 2,
+        title: "Immersive-book",
+        image: assets.boek_main,
+        longDesc: "This is a book cover design for a book titled 'Immersive'. The design is inspired by the book's theme, which is about the immersive experience of reading. The cover features a minimalist design with a bold typography that reflects the book's content."
+    },
+    {
+        id: 3,
+        title: "Cycle-Studio",
+        image: assets.cycle_main,
+        longDesc: "Cycle Studio is a cycling studio located in Antwerp, Belgium. The logo design is inspired by the studio's interior and the concept of cycling. The design is modern and minimalistic, with a bold and dynamic look that reflects the studio's brand identity."
+    },
+    {
+        id: 4,
+        title: "Cafeina",
+        image: assets.cafeina,
+        longDesc: "Cafeina is a coffee shop located in Antwerp, Belgium. The poster design is inspired by the shop's interior and the concept of coffee. The design is modern and minimalistic, with a touch of vintage style that reflects the shop's brand identity."
     }
 ];
 }}),
@@ -654,7 +681,7 @@ const Works = ()=>{
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                     className: "text-2xl font-bold md:text-left mt-5",
-                                    children: work.title
+                                    children: work.id
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/Works.jsx",
                                     lineNumber: 39,
@@ -662,18 +689,7 @@ const Works = ()=>{
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-sm text-lightGray  md:text-left mt-2 ",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                        className: "hover:text-primary",
-                                        href: `/portfolio/${work.id}`,
-                                        children: [
-                                            "See project ",
-                                            "->"
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/app/components/Works.jsx",
-                                        lineNumber: 43,
-                                        columnNumber: 17
-                                    }, this)
+                                    children: work.title
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/Works.jsx",
                                     lineNumber: 42,

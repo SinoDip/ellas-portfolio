@@ -10,13 +10,10 @@ import About from "./components/About";
 const page = () => {
   return (
     <>
-      <Navbar></Navbar>
       <Header></Header>
       <About></About>
       <Services></Services>
       <Works></Works>
-      <Contact></Contact>
-      <Footer></Footer>
     </>
   );
 };

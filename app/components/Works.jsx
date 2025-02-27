@@ -37,15 +37,10 @@ const Works = () => {
                 />
               </div>
               <h1 className="text-2xl font-bold md:text-left mt-5">
-                {work.title}
+                {work.id}
               </h1>
               <p className="text-sm text-lightGray  md:text-left mt-2 ">
-                <Link
-                  className="hover:text-primary"
-                  href={`/portfolio/${work.id}`}
-                >
-                  See project {"->"}
-                </Link>
+                {work.title}
               </p>
             </div>
           ))}

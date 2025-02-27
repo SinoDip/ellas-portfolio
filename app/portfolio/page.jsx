@@ -1,22 +1,44 @@
 "use client";
 
+import { useEffect } from "react";
+import { gsap } from "gsap";
 import Link from "next/link";
-import { assets, WorksData } from "@/assets/assets";
+import { assets, portfolioData } from "@/assets/assets";
 import Image from "next/image";
-import Navbar from "../components/Navbar";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
 import DecryptedText from "../reactbits/DecryptedText";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Portfolio = () => {
+  // GSAP animation for the page
+  useEffect(() => {
+    // Animate the title and grid on load
+    gsap.from(".title", {
+      opacity: 0,
+      y: -50,
+      duration: 1,
+      ease: "power4.out",
+    });
+
+    gsap.from(".portfolio-item", {
+      opacity: 0,
+      y: 100,
+      stagger: 0.2,
+      duration: 1,
+      ease: "power4.out",
+    });
+
+    // Optionally add animations when scrolling into view
+  }, []);
+
   return (
     <>
-      <Navbar></Navbar>
-      <div className="w-full h-full py-20 px-6 md:px-20">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-8">
+      <div className="w-full h-full py-32 px-6 ">
+        <div className="w-[80vw] mx-auto">
+          <h1 className="title text-4xl md:text-5xl font-extrabold text-white mb-8">
             <DecryptedText
-              text="Customize me"
+              text="My Portfolio"
               speed={100}
               maxIterations={20}
               characters="ABCD1234!?"
@@ -26,11 +48,11 @@ const Portfolio = () => {
               animateOn="view"
             />
           </h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-            {WorksData.map((project, i) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {portfolioData.map((project, i) => (
               <div
                 key={i}
-                className="rounded-lg overflow-hidden shadow-lg  bg-deepGray"
+                className="portfolio-item rounded-lg overflow-hidden shadow-lg bg-deepGray"
               >
                 <Link href={`/portfolio/${project.id}`}>
                   <div className="w-full h-64 bg-gray-200 flex justify-center items-center">
@@ -54,8 +76,6 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-      <Contact></Contact>
-      <Footer></Footer>
     </>
   );
 };
