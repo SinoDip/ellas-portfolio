@@ -44,6 +44,10 @@ export const navData = [
     title: "Works",
     url: "#works",
   },
+  {
+    title: "Portfolio",
+    url: "/portfolio",
+  },
 ];
 
 export const ServicesData = [
