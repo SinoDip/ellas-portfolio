@@ -97,15 +97,15 @@ export const navData = [
   },
   {
     title: "About Me ",
-    url: "#about",
+    url: "./#about",
   },
   {
     title: "Services",
-    url: "#services",
+    url: "./#services",
   },
   {
     title: "Works",
-    url: "#works",
+    url: "./#works",
   },
   {
     title: "Portfolio",
@@ -165,7 +165,7 @@ export const WorksData = [
   },
 ];
 
-//add minidesc for porfolio page and longdesc for dynamic page 
+//add minidesc for porfolio page and longdesc for dynamic page
 
 export const portfolioData = [
   {
@@ -182,9 +182,9 @@ export const portfolioData = [
     title: "Immersive-book",
     images: [assets.boek_main, assets.boek1, assets.boek2],
     shortDesc:
-      "The Immersive book cover uses minimalism and bold typography to reflect the deep reading experience.",
+      "I designed a book for Van Immerseel’s ocean-themed artworks, honoring her late husband's passion. Donated to the KinderKankerFonds, it holds personal significance due to its connection to cancer.",
     longDesc:
-      "Designed for the book Immersive, this cover visually represents the deep, engaging experience of reading. With a minimalist approach and striking typography, it captures the essence of being fully absorbed in a book’s world.",
+      "For Van Immerseel, I had the honor of designing a book to showcase her ocean-themed artworks, created as a tribute to her late husband’s passion for fishing and snorkeling. Van’s final project was to donate the book to the KinderKankerFonds.The design aimed to beautifully highlight her intricate works of sea creatures, while conveying the emotional depth behind each piece. Using Adobe Illustrator, InDesign, and Photoshop, I crafted a visually compelling layout that respects the artistry and sentiment behind the project. This project holds a special place in my heart, not only for the opportunity to work on such a meaningful cause but also for the personal connection to the fight against cancer.",
   },
   {
     id: "cycle-studio",
@@ -212,9 +212,9 @@ export const portfolioData = [
     images: [assets.cafeina3, assets.cafeina1, assets.cafeina2],
 
     shortDesc:
-      "Cafeina, a cozy Antwerp coffee shop, features a poster design blending modern minimalism with a vintage touch, inspired by its warm interior and coffee culture.",
+      "I created event visuals for DJ group Cafeïna, ensuring a cohesive identity across platforms.",
     longDesc:
-      "Cafeina, nestled in the heart of Antwerp, is more than just a coffee shop—it's a space where design meets aroma. The poster reflects its inviting atmosphere, drawing inspiration from the shop’s sleek yet nostalgic aesthetic. A balance of modern minimalism and vintage charm, the design captures the essence of coffee culture, creating a visual identity that feels both timeless and contemporary.",
+      "For the DJ group Cafeïna, I created a series of event designs for their Valentine’s special and the birthday celebration of Roma & Zaki. My work included posters, web banners, and animated videos, ensuring a cohesive visual identity across social media and their website.",
   },
   {
     id: "Lisanne",

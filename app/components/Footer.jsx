@@ -42,7 +42,7 @@ const Footer = () => {
             <ul className="mt-5 text-gray text-sm">
               <li className="py-1 hover:text-primary transition">
                 <a
-                  href="https://linkedin.com/in/ellas-touray"
+                  href="https://linkedin.com/in/ellastouray"
                   target="_blank"
                   className=""
                 >

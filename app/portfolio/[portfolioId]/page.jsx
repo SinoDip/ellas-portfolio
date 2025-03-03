@@ -91,8 +91,6 @@ const WorkDetail = () => {
           </div>
         </div>
       </div>
-      <Contact />
-      <Footer />
     </>
   );
 };

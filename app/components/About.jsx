@@ -94,7 +94,9 @@ const About = () => {
                 alt="download-icon"
               />
               <span className="transition-transform duration-300 hover:text-primary">
-                Download CV
+                <a href="/ellastouraycv.pdf" download>
+                  Download
+                </a>
               </span>
             </button>
           </div>
