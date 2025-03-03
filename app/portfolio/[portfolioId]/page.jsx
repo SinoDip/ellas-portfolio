@@ -28,9 +28,9 @@ const WorkDetail = () => {
         (project) => project.id === projectId
       );
 
-      console.log("Found Project:", foundProject); // ✅ Debugging Log
+      console.log("Found Project:", foundProject);
       if (foundProject) {
-        console.log("Project Images:", foundProject.images); // ✅ Log Images
+        console.log("Project Images:", foundProject.images);
       }
 
       setWork(foundProject);
@@ -50,7 +50,7 @@ const WorkDetail = () => {
   return (
     <>
       <div className="w-full h-full py-32 px-6 md:px-20">
-        <div className="max-w-4xl mx-auto flex flex-col md:flex-row gap-8">
+        <div className="max-w-4xl mx-auto flex flex-col md:flex-row gap-8 justify-center items-center ">
           {/* Image Slider */}
           <div className="flex-shrink-0 w-full md:w-1/2">
             {work?.images && (
