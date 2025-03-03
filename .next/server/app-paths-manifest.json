@@ -1,6 +1,7 @@
 {
   "/page": "app/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/portfolio/page": "app/portfolio/page.js",
-  "/portfolio/[portfolioId]/page": "app/portfolio/[portfolioId]/page.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/portfolio/[portfolioId]/page": "app/portfolio/[portfolioId]/page.js",
+  "/contact/page": "app/contact/page.js"
 }

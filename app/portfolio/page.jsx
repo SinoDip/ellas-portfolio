@@ -6,8 +6,8 @@ import Link from "next/link";
 import { assets, portfolioData } from "@/assets/assets";
 import Image from "next/image";
 import DecryptedText from "../reactbits/DecryptedText";
+import CircularText from "../reactbits/CircularText";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 gsap.registerPlugin(ScrollTrigger);
 
 const Portfolio = () => {
@@ -28,8 +28,6 @@ const Portfolio = () => {
       duration: 1,
       ease: "power4.out",
     });
-
-    // Optionally add animations when scrolling into view
   }, []);
 
   return (
@@ -37,15 +35,11 @@ const Portfolio = () => {
       <div className="w-full h-full py-32 px-6 ">
         <div className="w-[80vw] mx-auto">
           <h1 className="title text-4xl md:text-5xl font-extrabold text-white mb-8">
-            <DecryptedText
-              text="My Portfolio"
-              speed={100}
-              maxIterations={20}
-              characters="ABCD1234!?"
-              className="revealed"
-              parentClassName="all-letters"
-              encryptedClassName="encrypted"
-              animateOn="view"
+            <CircularText
+              text="MY*PORTFOLIO*PROJECTS*"
+              onHover="speedUp"
+              spinDuration={20}
+              className="custom-class"
             />
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -57,7 +51,7 @@ const Portfolio = () => {
                 <Link href={`/portfolio/${project.id}`}>
                   <div className="w-full h-64 bg-gray-200 flex justify-center items-center">
                     <Image
-                      src={project.image}
+                      src={project.images[0]}
                       alt={project.title}
                       className="object-cover w-full h-full"
                     />
@@ -67,7 +61,7 @@ const Portfolio = () => {
                       {project.title}
                     </h2>
                     <p className="text-gray-400 text-sm mt-2">
-                      {project.longDesc}
+                      {project.shortDesc}
                     </p>
                   </div>
                 </Link>

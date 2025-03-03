@@ -20,9 +20,19 @@ const Footer = () => {
           <div>
             <h1 className="font-bold">Information</h1>
             <ul className="mt-5 text-gray text-sm">
-              <li className="py-1">📞 +32 468 18 3001</li>
-              <li className="py-1">✉️ ellastouray@gmail.com</li>
-              <li className="py-1">📍 Antwerpen, Belgium</li>
+              <a href="tel:++32 468 48 47 50">
+                <li className="py-1 hover:text-primary transition">
+                  📞 +32 468 48 47 50
+                </li>
+              </a>
+              <a href="mailto:touraydesign@gmail.com" target="_blank">
+                <li className="py-1 hover:text-primary transition">
+                  ✉️ touraydesign@gmail.com
+                </li>
+              </a>
+              <li className="py-1 hover:text-primary transition">
+                📍 Antwerpen, Belgium
+              </li>
             </ul>
           </div>
 
@@ -30,31 +40,22 @@ const Footer = () => {
           <div>
             <h1 className="font-bold">Social Media</h1>
             <ul className="mt-5 text-gray text-sm">
-              <li className="py-1">
+              <li className="py-1 hover:text-primary transition">
                 <a
                   href="https://linkedin.com/in/ellas-touray"
                   target="_blank"
-                  className="hover:text-primary transition"
+                  className=""
                 >
                   🔗 LinkedIn
                 </a>
               </li>
               <li className="py-1">
                 <a
-                  href="https://instagram.com/ellasdesigns"
+                  href="https://www.instagram.com/touray.design"
                   target="_blank"
                   className="hover:text-primary transition"
                 >
                   📸 Instagram
-                </a>
-              </li>
-              <li className="py-1">
-                <a
-                  href="https://dribbble.com/ellas"
-                  target="_blank"
-                  className="hover:text-primary transition"
-                >
-                  🎨 Dribbble
                 </a>
               </li>
             </ul>
