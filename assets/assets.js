@@ -142,7 +142,7 @@ export const WorksData = [
     Link: "/",
   },
   {
-    id: "Immersive-book ",
+    id: "Immerseel-book ",
 
     image: assets.boek_main,
 
@@ -157,7 +157,7 @@ export const WorksData = [
     Link: "/",
   },
   {
-    id: "Cafeina",
+    id: "Cafeïna",
 
     image: assets.cafeina3,
     title: "Poster Design",
@@ -178,8 +178,8 @@ export const portfolioData = [
       "Located in Antwerp, Bar Vela blends sophistication with a modern edge. Its business card reflects this identity through a sleek, minimalistic design inspired by the bar’s ambiance and logo. With clean lines and a refined aesthetic, the card embodies the essence of Bar Vela—chic, contemporary, and effortlessly elegant.",
   },
   {
-    id: "Immersive-book",
-    title: "Immersive-book",
+    id: "Immerseel-book",
+    title: "L. Van Immerseel-book",
     images: [assets.boek_main, assets.boek1, assets.boek2],
     shortDesc:
       "I designed a book for Van Immerseel’s ocean-themed artworks, honoring her late husband's passion. Donated to the KinderKankerFonds, it holds personal significance due to its connection to cancer.",
@@ -207,8 +207,8 @@ export const portfolioData = [
       "The Cycle Studio logo captures the energy of cycling with a modern, minimalistic design. Its bold and dynamic look reflects the studio’s identity while maintaining a clean and professional aesthetic.",
   },
   {
-    id: "cafetina",
-    title: "Cafeina",
+    id: "Cafeïna",
+    title: "Cafeïna",
     images: [assets.cafeina3, assets.cafeina1, assets.cafeina2],
 
     shortDesc:
