@@ -207,7 +207,7 @@ export const portfolioData = [
       "The Cycle Studio logo captures the energy of cycling with a modern, minimalistic design. Its bold and dynamic look reflects the studio’s identity while maintaining a clean and professional aesthetic.",
   },
   {
-    id: "Cafeïna",
+    id: "Cafeina",
     title: "Cafeïna",
     images: [assets.cafeina3, assets.cafeina1, assets.cafeina2],
 
